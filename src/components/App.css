@@ -1,22 +1,27 @@
 body {
   margin: 0;
   font-family: Arial, sans-serif;
+  background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQg1sH2JvOtVE0mLtSeT0Zz7-ZbDAYmwtj-yg&s');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position-x: center;
 }
 
 .App {
   display: grid;
   grid-template-rows: min-content auto;
-  grid-template-columns: 250px auto;
   height: 100vh;
   overflow: scroll;
 }
 
 header {
   display: flex;
+  align-items: center;
   justify-content: space-between;
   background-color: black;
   color: white;
-  grid-column: 1 / span 2;
+  grid-column: 1 / span 3;
   padding: 10px 5px;
 }
 
@@ -36,11 +41,23 @@ form textarea {
 nav,
 article {
   height: 100%;
-  padding: 10px;
+  padding: 20px;
+}
+
+.main-content {
+  display: flex; /* Use flexbox for layout */
+  flex: 1; /* Take up remaining space */
 }
 
 nav {
-  background-color: #dee9ff;
+  background: 
+  linear-gradient(
+    rgba(0, 0, 0, 0.5),
+    rgba(0, 0, 0, 0.5)
+  );
+  color: rgb(180, 180, 180);
+  text-shadow: 1px 1px black;
+  font-family: 'Courier New', Courier, monospace;
 }
 
 nav p:hover {
@@ -48,16 +65,30 @@ nav p:hover {
   cursor: pointer;
 }
 
+article {
+  padding: 40px;
+  max-width: 600px;
+  color: white;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+article .title {
+  color: white; 
+  text-shadow: 2px 2px 4px black;
+}
+
 article .date {
   font-style: italic;
+  color: gainsboro;
 }
 
 article .body {
   white-space: break-spaces;
+  text-align: justify;
 }
 
 .error {
-  background-color: red;
-  color: gold;
+  background-color: rgb(255, 200, 200);
+  color: rgb(255, 0, 0);
   padding: 5px;
 }
