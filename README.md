@@ -5,4 +5,4 @@ This app allows a user with permission to browse previously made blogs post alon
 
 Any user without permission is able to browse the many articles about whale facts. Details like roles, threats, social lives, migration, and common facts. Each has their respective title, when the post was made, then their body of information.
 
-By Edward Droppelman, Aidan Hodges, Spencer Firestone, and Derek Lanz
+By Edward Droppelman
